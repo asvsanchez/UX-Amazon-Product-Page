@@ -1,12 +1,11 @@
 import React from 'react';
-import logo from './logo.png';
-import './Footer.css';
-import { Navbar, Nav, Form, Button, FormControl, NavDropdown } from 'react-bootstrap';
+import logo from '../media/logo.png';
+import '../assets/scss/_footer.scss';
+import { Navbar, Nav } from 'react-bootstrap';
 
 const Footer: React.FC = () => {
   return (
     <div className="App">
-
       <footer className="App-footer">
         <Navbar className="menu-var" variant="dark">
           <img src={logo} className="App-logo logo-footer" alt="logo" />

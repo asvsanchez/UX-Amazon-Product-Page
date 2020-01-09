@@ -2,8 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import './assets/css/main.css';
-import Header from './Header';
-import Footer from './Footer';
+import Header from './components/Header';
+import Footer from './components/Footer';
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(<Header />, document.getElementById('header'));
