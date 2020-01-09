@@ -1,9 +1,9 @@
 import React from 'react';
 import logo from './logo.png';
-import './App.css';
+import './Header.css';
 import { Navbar, Nav, Form, Button, FormControl, NavDropdown } from 'react-bootstrap';
 
-const App: React.FC = () => {
+const Header: React.FC = () => {
   return (
     <div className="App">
       <header className="App-header">
@@ -34,32 +34,8 @@ const App: React.FC = () => {
           <Nav.Link href="#">Cesta</Nav.Link>
         </Navbar>
       </header>
-
-      <footer className="App-footer">
-        <Navbar className="menu-var" variant="dark">
-          <img src={logo} className="App-logo logo-footer" alt="logo" />
-        </Navbar>
-        <Navbar className="menu-var link-countries" variant="dark">
-          <Nav.Link href="#" className="a-footer">Australia</Nav.Link>
-          <Nav.Link href="#" className="a-footer">Alemania</Nav.Link>
-          <Nav.Link href="#" className="a-footer">Brasil</Nav.Link>
-          <Nav.Link href="#" className="a-footer">Canadá</Nav.Link>
-          <Nav.Link href="#" className="a-footer">China</Nav.Link>
-          <Nav.Link href="#" className="a-footer">Estados Unidos</Nav.Link>
-          <Nav.Link href="#" className="a-footer">Francia</Nav.Link>
-          <Nav.Link href="#" className="a-footer">India</Nav.Link>
-          <Nav.Link href="#" className="a-footer">Italia</Nav.Link>
-          <Nav.Link href="#" className="a-footer">Japón</Nav.Link>
-          <Nav.Link href="#" className="a-footer">México</Nav.Link>
-          <Nav.Link href="#" className="a-footer">Países Bajos</Nav.Link>
-          <Nav.Link href="#" className="a-footer">Emiratos Árabes</Nav.Link>
-          <Nav.Link href="#" className="a-footer">Reino Unido</Nav.Link>
-          <Nav.Link href="#" className="a-footer">Singapur</Nav.Link>
-          <Nav.Link href="#" className="a-footer">Turquía</Nav.Link>
-        </Navbar>
-      </footer>
     </div>
   );
 }
 
-export default App;
+export default Header;

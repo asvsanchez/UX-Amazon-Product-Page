@@ -4,22 +4,20 @@
 
 a {
   color:white;
+  margin-left: 2px;
+  margin-right: 2px;
 }
 a:hover {
   color:white;
+  /* border-radius: 1px 1px 1px 1px;
+  -moz-border-radius: 2px 2px 2px 2px;
+  -webkit-border-radius: 2px 2px 2px 2px;
+  border: 1px solid #ffffff; */
 }
 
 .App-logo {
   width: 5%;
   margin-right: 10px;
-}
-
-.menu-search {
-  width: 500%;
-}
-
-.mr-sm-2 {
-  width: 100% !important;
 }
 
 .App-footer {
