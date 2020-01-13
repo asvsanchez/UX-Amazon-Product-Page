@@ -6,6 +6,7 @@ const Header_2: React.FC = () => {
     <div className='nav-left'>
   <div id="nav-global-location-slot">
     <span className="a-declarative" data-a-modal='{&quot;width&quot;:375, &quot;closeButton&quot;:&quot;false&quot;,&quot;popoverLabel&quot;:&quot;Elige tu ubicación&quot;, &quot;name&quot;:&quot;glow-modal&quot;, &quot;url&quot;:&quot;/gp/glow/get-address-selections.html?deviceType&#x3D;desktop&amp;pageType&#x3D;Detail&amp;storeContext&#x3D;amazon-smp&quot;, &quot;footer&quot;:null,&quot;header&quot;:&quot;Elige tu ubicación&quot;}' data-action="a-modal">
+        {/* eslint-disable-next-line */}
         <a className="nav-a nav-a-2 a-popover-trigger a-declarative">
             <div className="nav-sprite" id="nav-packard-glow-loc-icon"></div>
             <div id="glow-ingress-block">
