@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Header_3: React.FC = () => {
+const Devices: React.FC = () => {
   return (
 <>
 <div id="mako-subnav-helper">
@@ -153,4 +153,4 @@ const Header_3: React.FC = () => {
   );
 }
 
-export default Header_3;
+export default Devices;

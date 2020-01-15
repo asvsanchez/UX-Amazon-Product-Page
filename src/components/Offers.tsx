@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Header_2: React.FC = () => {
+const Offers: React.FC = () => {
   return (
     <div id='nav-main' className='nav-sprite'>
       <div className='nav-left'>
@@ -62,4 +62,4 @@ const Header_2: React.FC = () => {
   );
 }
 
-export default Header_2;
+export default Offers;

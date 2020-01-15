@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Header_1: React.FC = () => {
+const Client: React.FC = () => {
   return (
 
     <div id='nav-belt'>
@@ -166,4 +166,4 @@ const Header_1: React.FC = () => {
   );
 }
 
-export default Header_1;
+export default Client;

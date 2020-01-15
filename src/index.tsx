@@ -1,10 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-//import './index.css';
 import './assets/css/main.css';
-import Header1 from './components/Header_1';
-import Header2 from './components/Header_2';
-import Header3 from './components/Header_3';
+import Client from './components/Client';
+import Offers from './components/Offers';
+import Devices from './components/Devices';
 import Advertisement from './components/Advertisement';
 import Images from './components/Images';
 //import Photo from './components/Photo';
@@ -19,9 +18,9 @@ import Shipping from './components/Shipping';
 import Wish from './components/Wish';
 import * as serviceWorker from './serviceWorker';
 
-ReactDOM.render(<Header1 />, document.getElementById('header_1'));
-ReactDOM.render(<Header2 />, document.getElementById('header_2'));
-ReactDOM.render(<Header3 />, document.getElementById('header_3'));
+ReactDOM.render(<Client />, document.getElementById('client'));
+ReactDOM.render(<Offers />, document.getElementById('offers'));
+ReactDOM.render(<Devices />, document.getElementById('devices'));
 ReactDOM.render(<Advertisement />, document.getElementById('advert'));
 ReactDOM.render(<Images />, document.getElementById('images'));
 //ReactDOM.render(<Photo />, document.getElementById('photo'));
