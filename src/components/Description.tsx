@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 interface IDescription {
   description_element: String[];
@@ -6,22 +6,33 @@ interface IDescription {
 
 class Description extends React.Component<IDescription, {}> {
   constructor(props: IDescription) {
-      super(props);
-      // change state
+    super(props);
+    // change state
   }
 
-  public render() {  
+  public render() {
     return (
-    <div id="featurebullets_feature_div" className="feature" data-feature-name="featurebullets">
-      <div id="feature-bullets" className="a-section a-spacing-medium a-spacing-top-small">
-        <ul className="a-unordered-list a-vertical a-spacing-none">
-        {this.props.description_element.map(function (element, index) {
-          return <li><span className="a-list-item">{element}</span></li>
-				})}
-        </ul>
+      <div
+        id="featurebullets_feature_div"
+        className="feature"
+        data-feature-name="featurebullets"
+      >
+        <div
+          id="feature-bullets"
+          className="a-section a-spacing-medium a-spacing-top-small"
+        >
+          <ul className="a-unordered-list a-vertical a-spacing-none">
+            {this.props.description_element.map(function(element, index) {
+              return (
+                <li>
+                  <span className="a-list-item">{element}</span>
+                </li>
+              );
+            })}
+          </ul>
+        </div>
       </div>
-    </div>
-  );
+    );
   }
 }
 

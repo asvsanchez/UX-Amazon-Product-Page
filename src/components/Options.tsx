@@ -58,7 +58,7 @@ class Options extends React.Component<IOptions, {}> {
                       {this.props.option_element[0]}
                     </a>
                     <span className="a-color-price abb-option-buying-price">
-                    {this.props.option_element[1]}
+                      {this.props.option_element[1]}
                     </span>
                   </span>
                 </label>
@@ -106,7 +106,7 @@ class Options extends React.Component<IOptions, {}> {
                       {this.props.option_element[2]}
                     </a>
                     <span className="a-color-price abb-option-buying-price">
-                    {this.props.option_element[3]}
+                      {this.props.option_element[3]}
                     </span>
                   </span>
                 </label>
