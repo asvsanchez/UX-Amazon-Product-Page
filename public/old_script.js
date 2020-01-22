@@ -11327,3 +11327,203 @@ P.register('twister-js-init-mason-data', function() {
     }; //selectively not escaping this.
     return dataToReturn;
 });
+
+P.when("A", "a-modal").execute(function(A, PopoverFactory) {
+    var $ = A.$;
+    PopoverFactory.create($(".abb-open-interstitial"), {
+        name: "abb-interstitial",
+        header: "Añadir al pedido",
+        width: 800
+    });
+});
+
+P.when(
+    "desktop-accessory-upsell-factory",
+    "ODSBuyboxManager",
+    "jQuery"
+).execute(function(
+    AccessoryUpsellFactory,
+    ODSBuyboxManager,
+    $
+) {
+    var accessoriesJSON = {
+        asinsData: {
+            "B01LXP5TXI": {
+                "B01LXP5TXI": {
+                    "isInterstitial": true,
+                    "checkForInteraction": false,
+                    "hasBeenInteractedWith": false,
+                    "isDigitalSubscription": false,
+                    "isSubsMobileInterstitial": false,
+                    "isForIntroOrFreePromotion": false,
+                    "buyingPriceDecimal": {
+                        "amount_": 14.99,
+                        "unit_": {
+                            "code_": "EUR",
+                            "smallestAmount_": 0.01
+                        }
+                    },
+                    "listPriceDecimal": {
+                        "amount_": 14.99,
+                        "unit_": {
+                            "code_": "EUR",
+                            "smallestAmount_": 0.01
+                        }
+                    },
+                    "offerListingID": "3g3Pxs1RAlG9KY7vdFG2kHEt8Kg9VZQtvMRoFP13e2WRmh9eNx98oda965R8EC2Z6I8ie5UFJb0QVwhDaw2gH4UIt7jWM9S4TguqGJ7vF8Lz6Rd3iJNzCWzPNN5zVHz2",
+                    "merchantName": "Amazon.es",
+                    "featureBullets": ["Conecta el Fire TV Stick directamente al router con un cable Ethernet, sin necesidad de conexión wifi.", "Muy fácil de usar: conecta el adaptador Ethernet al Fire TV Stick, inserta el puerto del cable USB en el adaptador de corriente y el puerto del cable Ethernet en el adaptador Ethernet y, por último, acopla el cable Ethernet al router.", "Disfruta de la velocidad y la fiabilidad de la conexión a Internet por cable.", "Compatible con el Fire TV Stick | Basic Edition, el Fire TV Stick (2.ª generación) y el Fire TV Stick 4K."],
+                    "hiResImage": {
+                        "URL_": "https://images-eu.ssl-images-amazon.com/images/I/31CCr6bDr7L._SL500_.jpg",
+                        "tag_": "\u003cimg src\u003d\"https://images-eu.ssl-images-amazon.com/images/I/31CCr6bDr7L._SL500_.jpg\" width\u003d\"500\" height\u003d\"500\" border\u003d\"0\" /\u003e",
+                        "height_": 500,
+                        "hasHeight_": true,
+                        "width_": 500,
+                        "hasWidth_": true,
+                        "isPlaceholder_": false,
+                        "hasIsPlaceholder_": true,
+                        "isCustomerImage_": false,
+                        "hasIsCustomerImage_": true,
+                        "isRichMedia_": false,
+                        "hasIsRichMedia_": true,
+                        "customerID_": "A1AT7YVPFBWXBL",
+                        "variant_": ""
+                    },
+                    "lowResImage": {
+                        "URL_": "https://images-eu.ssl-images-amazon.com/images/I/31CCr6bDr7L._SL160_.jpg",
+                        "tag_": "\u003cimg src\u003d\"https://images-eu.ssl-images-amazon.com/images/I/31CCr6bDr7L._SL160_.jpg\" width\u003d\"160\" height\u003d\"160\" border\u003d\"0\" /\u003e",
+                        "height_": 160,
+                        "hasHeight_": true,
+                        "width_": 160,
+                        "hasWidth_": true,
+                        "isPlaceholder_": false,
+                        "hasIsPlaceholder_": true,
+                        "isCustomerImage_": false,
+                        "hasIsCustomerImage_": true,
+                        "isRichMedia_": false,
+                        "hasIsRichMedia_": true,
+                        "customerID_": "A1AT7YVPFBWXBL",
+                        "variant_": ""
+                    },
+                    "visualDimension": true,
+                    "showPriceStrikethrough": false,
+                    "buyingPrice": "EUR 14,99",
+                    "listPrice": "EUR 14,99",
+                    "asin": "B01LXP5TXI",
+                    "title": "Amazon - Adaptador Ethernet para Fire TV Stick | Basic Edition",
+                    "currentDevice": false,
+                    "isRow": false
+                }
+            },
+            "B078KSHVCS": {
+                "B078KSHVCS": {
+                    "isInterstitial": true,
+                    "checkForInteraction": false,
+                    "hasBeenInteractedWith": false,
+                    "isDigitalSubscription": false,
+                    "isSubsMobileInterstitial": false,
+                    "isForIntroOrFreePromotion": false,
+                    "buyingPriceDecimal": {
+                        "amount_": 20.99,
+                        "unit_": {
+                            "code_": "EUR",
+                            "smallestAmount_": 0.01
+                        }
+                    },
+                    "listPriceDecimal": {
+                        "amount_": 20.99,
+                        "unit_": {
+                            "code_": "EUR",
+                            "smallestAmount_": 0.01
+                        }
+                    },
+                    "offerListingID": "18s49B%2BAhOPUD1eFfJDhdKvPDAjgIsr9O2S6rlnbS9CrISF3RsoAzdvstBPVCOdgUncQttR2h0hPSaugH1gcbXF365miNDh0zvprNETvQqgYlqKrGrGY%2Fu%2F7rXYSS%2FrA",
+                    "merchantName": "Amazon.es",
+                    "featureBullets": ["EVITAR ENREDOS: Suministra el Amazon Fire TV directamente a través del puerto USB del televisor con corriente. Ya no necesitarás un enchufe separado", "TECNOLOGÍA AVANZADA: incluye una gestión de energía especial que equilibra las fluctuaciones del suministro de corriente, almacenando la energía sobrante y liberándola cuando sea necesario", "LONGITUD ÓPTIMA: Este cable es óptimo para conectar El Fire TV con El puerto USB del televisor", "UNIVERSAL: compatible con todo tipo de puerto USB", "el integrado acumulador de iones de litio posibilita el uso del Amazon Fire TV con cualquier puerto USB", "DISEÑO PATENTADO: producto innovador ideado especialmente para el suministro de corriente del Amazon Fire TV"],
+                    "hiResImage": {
+                        "URL_": "https://images-eu.ssl-images-amazon.com/images/I/41O3Hgw3otL._SL500_.jpg",
+                        "tag_": "\u003cimg src\u003d\"https://images-eu.ssl-images-amazon.com/images/I/41O3Hgw3otL._SL500_.jpg\" width\u003d\"500\" height\u003d\"500\" border\u003d\"0\" /\u003e",
+                        "height_": 500,
+                        "hasHeight_": true,
+                        "width_": 500,
+                        "hasWidth_": true,
+                        "isPlaceholder_": false,
+                        "hasIsPlaceholder_": true,
+                        "isCustomerImage_": false,
+                        "hasIsCustomerImage_": true,
+                        "isRichMedia_": false,
+                        "hasIsRichMedia_": true,
+                        "customerID_": "A1AT7YVPFBWXBL",
+                        "variant_": ""
+                    },
+                    "lowResImage": {
+                        "URL_": "https://images-eu.ssl-images-amazon.com/images/I/41O3Hgw3otL._SL160_.jpg",
+                        "tag_": "\u003cimg src\u003d\"https://images-eu.ssl-images-amazon.com/images/I/41O3Hgw3otL._SL160_.jpg\" width\u003d\"160\" height\u003d\"160\" border\u003d\"0\" /\u003e",
+                        "height_": 160,
+                        "hasHeight_": true,
+                        "width_": 160,
+                        "hasWidth_": true,
+                        "isPlaceholder_": false,
+                        "hasIsPlaceholder_": true,
+                        "isCustomerImage_": false,
+                        "hasIsCustomerImage_": true,
+                        "isRichMedia_": false,
+                        "hasIsRichMedia_": true,
+                        "customerID_": "A1AT7YVPFBWXBL",
+                        "variant_": ""
+                    },
+                    "visualDimension": true,
+                    "showPriceStrikethrough": false,
+                    "buyingPrice": "EUR 20,99",
+                    "listPrice": "EUR 20,99",
+                    "asin": "B078KSHVCS",
+                    "title": "Mission Cables MC45 - Cable USB de Corriente para el Amazon Fire TV con 4K Ultra HD, Color Negro",
+                    "currentDevice": false,
+                    "isRow": false
+                }
+            }
+        },
+        primaryAsin: "B07PVCVBN7",
+        accessoriesCampaignSource: {
+            "accessoryList": "[{\n\"asin\" : \"B01LXP5TXI\",\n\"linkText\" : \"Amazon Ethernet Adaptador - Disfruta de la velocidad y la fiabilidad de la conexión a Internet por cable\",\n\"interstitial\" : true,\n\"hideOnMobile\" : false\n      }, \n{\n\"asin\" : \"B078KSHVCS\",\n\"linkText\" : \"Cable USB de Corriente para el Amazon Fire TV\",\n\"interstitial\" : true,\n\"hideOnMobile\" : false\n      }]",
+            "item": "${context.item}"
+        }
+    };
+    //Initialize DABB
+    var dabbInstance = AccessoryUpsellFactory.get($("#accessory-upsell"), accessoriesJSON);
+});
+
+<
+script type = "a-state"
+data - a - state = "{&quot;key&quot;:&quot;turbo-checkout-page-state&quot;}" > {
+        "turboWeblab": "RCX_CHECKOUT_TURBO_DESKTOP_PRIME_87783",
+        "strings": {
+            "TURBO_CHECKOUT_HEADER": "Comprar ahora: Amazon Fire TV Stick con mando por voz Alexa | Reproductor de contenido multimedia en streaming",
+            "TURBO_LOADING_TEXT": "Cargando <
+            script type = "a-state"
+            data - a - state = "{&quot;key&quot;:&quot;createInfo&quot;}" > { "isHorizonte": true } < /script> <
+            script type = "a-state"
+            data - a - state = "{&quot;key&quot;:&quot;wishlistDPState&quot;}" > { "createHeader": "Cree una Lista de deseos", "addHeader": "Añadir a la Lista de deseos", "addWidth": "900", "vendorId": "website.wishlist.detail.add", "createHeight": "auto", "streaming": "1", "isFirstCreate": false, "createWidth": "650", "addUrl": "/gp/registry/huc/add-item-ajax.html?ie=UTF8", "addHeight": "700", "action": "add", "createUrl": "/hz/wishlist/create?ie=UTF8&isPopover=1&isCreateAndAdd=1", "firstcreateHeader": "" } < /script> <
+            script type = "a-state"
+            data - a - state = "{&quot;key&quot;:&quot;atwl&quot;}" > { "showInlineLink": false, "hzPopover": true, "wishlistButtonId": "add-to-wishlist-button", "dropDownHtml": "", "inlineJsFix": true, "wishlistButtonSubmitId": "add-to-wishlist-button-submit", "maxAjaxFailureCount": "3", "asin": "B07PVCVBN7" } < /script> <
+            script type = "a-state"
+            data - a - state = "{&quot;key&quot;:&quot;acState&quot;}" > { "acAsin": "B07PVCVBN7" } < /script>
+
+            <
+            script type = "a-state"
+            data - a - state = "{&quot;key&quot;:&quot;popoverState&quot;}" > { "formId": "addToCart", "showWishListDropDown": true, "babyRegistryId": "add-to-registry-baby-button", "showBabyRegDropdown": false, "wishlistPopoverWidth": 206, "isAddToWishListDropDownAuiEnabled": true, "showPopover": true } < /script>
+
+            P.now().execute('dp-mark-twister', function() {
+                var options = {
+                    name: 'twister',
+                    hasComponents: true,
+                    components: []
+                };
+                options.components.push({
+                    "name": "singleton",
+                    "isInteractive": false
+                });
+                if (typeof window.markFeatureRender === 'function') {
+                    window.markFeatureRender('twister', options);
+                }
+            });
