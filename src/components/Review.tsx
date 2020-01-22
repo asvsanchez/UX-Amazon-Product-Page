@@ -5,6 +5,7 @@ interface IReview {
 }
 
 class Review extends React.Component<IReview, {}> {
+  /* eslint-disable-next-line */
   constructor(props: IReview) {
     super(props);
     // change state
@@ -39,9 +40,8 @@ class Review extends React.Component<IReview, {}> {
                   data-action="a-popover"
                   data-a-popover='{"max-width":"700","closeButton":"false","position":"triggerBottom","url":"/gp/customer-reviews/widgets/average-customer-review/popover/ref=dpx_acr_pop_?contextId=dpx&amp;asin=B07PVCVBN7"}'
                 >
-                  {/* eslint-disable-next-line */}
                   <a
-                    href="javascript:void(0)"
+                    href="/"
                     className="a-popover-trigger a-declarative"
                   >
                     <i className="a-icon a-icon-star a-star-4-5">

@@ -5,6 +5,7 @@ interface IDescription {
 }
 
 class Description extends React.Component<IDescription, {}> {
+  /* eslint-disable-next-line */
   constructor(props: IDescription) {
     super(props);
     // change state

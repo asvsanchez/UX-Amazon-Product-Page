@@ -6,6 +6,7 @@ interface IShipping {
 }
 
 class Shipping extends React.Component<IShipping, {}> {
+  /* eslint-disable-next-line */
   constructor(props: IShipping) {
     super(props);
     // change state

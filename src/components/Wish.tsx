@@ -5,6 +5,7 @@ interface IWish {
 }
 
 class Wish extends React.Component<IWish, {}> {
+  /* eslint-disable-next-line */
   constructor(props: IWish) {
     super(props);
     // change state
@@ -20,8 +21,7 @@ class Wish extends React.Component<IWish, {}> {
           data-action="dpContextualIngressPt"
           data-dpContextualIngressPt="{}"
         >
-          {/* eslint-disable-next-line */}
-          <a className="a-link-normal" href="#">
+          <a className="a-link-normal" href="/">
             <div className="a-row a-spacing-mini">
               <div className="a-column a-span12 a-text-left">
                 <div id="contextualIngressPt">
@@ -47,11 +47,11 @@ class Wish extends React.Component<IWish, {}> {
           data-action="a-button-group"
           role="radiogroup"
         >
-          {/* eslint-disable-next-line */}
           <span
             id="wishListMainButton"
             className="a-button a-button-group-first a-spacing-none a-button-base"
             role="radio"
+            aria-checked="false"
             aria-labelledby="wishListMainButton-announce"
           >
             <span className="a-button-inner">
@@ -81,16 +81,15 @@ class Wish extends React.Component<IWish, {}> {
               </span>
             </span>
           </span>
-          {/* eslint-disable-next-line */}
           <span
             className="a-button a-button-dropdown a-button-group-last"
             id="wl-inline-wrapper"
           >
-            {/* eslint-disable-next-line */}
             <span
               id="wishListDropDown"
               className="a-button a-button-dropdown a-button-group-last a-spacing-none a-button-base wishlist-dropdown-button"
               role="radio"
+              aria-checked="false"
               aria-labelledby="wishListDropDown-announce"
             >
               <span className="a-button-inner">

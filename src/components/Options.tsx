@@ -5,6 +5,7 @@ interface IOptions {
 }
 
 class Options extends React.Component<IOptions, {}> {
+  /* eslint-disable-next-line */
   constructor(props: IOptions) {
     super(props);
     // change state

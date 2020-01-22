@@ -62,15 +62,12 @@ const Gift: React.FC = () => {
                     data-action="a-popover"
                     data-a-popover='{"name":"preRegistrationPopoverContent","position":"triggerBottom"}'
                   >
-                    {/* eslint-disable-next-line */}
                     <a
-                      href="javascript:void(0)"
+                      href="/"
                       className="a-popover-trigger a-declarative"
                     >
-                      {/* eslint-disable-next-line */}
                       <a
                         className="a-link-normal gifting-option-popup-link"
-                        target="_blank"
                         rel="noopener"
                         href="https://www.amazon.es/gp/help/customer/display.html/?nodeId=GMPKVYDBR223TRPY&pop-up=1"
                       >

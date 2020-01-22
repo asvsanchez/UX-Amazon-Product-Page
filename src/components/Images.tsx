@@ -5,6 +5,7 @@ interface IImages {
 }
 
 class Images extends React.Component<IImages, {}> {
+  /* eslint-disable-next-line */
   constructor(props: IImages) {
     super(props);
     // change state

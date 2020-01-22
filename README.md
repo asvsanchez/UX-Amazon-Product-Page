@@ -1,6 +1,6 @@
 # Better UX for Amazon Product Page
 
-By Alejandro Sánchez Villarín
+By Alejandro Sánchez Villarín - Project for the subject Guided Design by User Experience - Master in Computer Engineering - University of Seville
 
 ### Available scripts in the project
 

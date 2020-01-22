@@ -52,10 +52,8 @@ const Photo: React.FC = () => {
       </li>
       <li id="noFlashContent" className="noFlash a-hidden">
         <span className="a-list-item">
-          {/* eslint-disable-next-line */}
           <a
             className="a-link-normal"
-            target="_blank"
             rel="noopener"
             href="https://get.adobe.com/flashplayer"
           >

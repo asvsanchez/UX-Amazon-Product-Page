@@ -6,6 +6,7 @@ interface IPrice {
 }
 
 class Price extends React.Component<IPrice, {}> {
+  /* eslint-disable-next-line */
   constructor(props: IPrice) {
     super(props);
     // change state

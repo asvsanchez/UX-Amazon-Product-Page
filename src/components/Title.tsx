@@ -5,6 +5,7 @@ interface ITitle {
 }
 
 class Title extends React.Component<ITitle, {}> {
+  /* eslint-disable-next-line */
   constructor(props: ITitle) {
     super(props);
     // change state
