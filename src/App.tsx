@@ -1,15 +1,16 @@
 import React from 'react';
-import Images from './components/Images';
-import Title from './components/Title';
-import Review from './components/Review';
-import Description from './components/Description';
+import Images from './containers/Images';
+import Title from './containers/Title';
+import Review from './containers/Review';
+import Description from './containers/Description';
 import Cart from './components/Cart';
 import Gift from './components/Gift';
-import Options from './components/Options';
+import Options from './containers/Options';
 import Social from './components/Social';
-import Shipping from './components/Shipping';
-import Wish from './components/Wish';
+import Shipping from './containers/Shipping';
+import Wish from './containers/Wish';
 import Price from './containers/Price';
+import Photo from './components/Photo';
 
 import IGlobalState, { initialState } from './state/globalState';
 import { Action, createStore } from 'redux';
@@ -398,53 +399,7 @@ class App extends React.Component {
                                                 </div>
                                             </div>
                                             <div id="photo"></div>
-                                            <ul className="a-unordered-list a-nostyle a-horizontal list maintain-height">
-                                                <li className="image item itemNo0 selected maintain-height">
-                                                    <span className="a-list-item">
-                                        <span className="a-declarative" data-action="main-image-click"
-                                           data-main-image-click="{}">
-                                           <div id="imgTagWrapperId" className="imgTagWrapper">
-                                              <img
-                                                 alt="Amazon Fire TV Stick con mando por voz Alexa | Reproductor de contenido multimedia en streaming"
-                                                 src="https://images-na.ssl-images-amazon.com/images/I/81mHCOq5vqL._AC_SY300_.jpg"
-                                                 data-old-hires="https://images-na.ssl-images-amazon.com/images/I/81mHCOq5vqL._AC_SL1500_.jpg"
-                                                 className="a-dynamic-image" id="landingImage"
-                                                 data-a-dynamic-image="{&quot;https://images-na.ssl-images-amazon.com/images/I/81mHCOq5vqL._AC_SX466_.jpg&quot;:[466,466],&quot;https://images-na.ssl-images-amazon.com/images/I/81mHCOq5vqL._AC_SY450_.jpg&quot;:[450,450],&quot;https://images-na.ssl-images-amazon.com/images/I/81mHCOq5vqL._AC_SX569_.jpg&quot;:[569,569],&quot;https://images-na.ssl-images-amazon.com/images/I/81mHCOq5vqL._AC_SY355_.jpg&quot;:[355,355],&quot;https://images-na.ssl-images-amazon.com/images/I/81mHCOq5vqL._AC_SX425_.jpg&quot;:[425,425],&quot;https://images-na.ssl-images-amazon.com/images/I/81mHCOq5vqL._AC_SX679_.jpg&quot;:[679,679],&quot;https://images-na.ssl-images-amazon.com/images/I/81mHCOq5vqL._AC_SX522_.jpg&quot;:[522,522]}"
-                                                 style={{maxWidth:"679px", maxHeight:"679px"}}/>
-                                           </div>
-                                        </span>
-                                                    </span>
-                                                </li>
-                                                <li className="mainImageTemplate template">
-                                                    <span className="a-list-item">
-                                        <span className="a-declarative" data-action="main-image-click"
-                                           data-main-image-click="{}">
-                                           <div className="imgTagWrapper">
-                                              <span className="placeHolder"></span>
-                                        </div>
-                                        </span>
-                                        </span>
-                                        </li>
-                                        <li className="swatchHoverExp a-hidden maintain-height">
-                                            <span className="a-list-item">
-                                        <span className="a-declarative" data-action="main-image-click"
-                                           data-main-image-click="{}">
-                                           <div className="imgTagWrapper">
-                                              <span className="placeHolder"></span>
-                                    </div>
-                                    </span>
-                                    </span>
-                                    </li>
-                                    <li id="noFlashContent" className="noFlash a-hidden">
-                                        <span className="a-list-item">
-                                        {/* eslint-disable-next-line */}
-                                        <a className="a-link-normal" target="_blank" rel="noopener"
-                                           href="https://get.adobe.com/flashplayer">
-                                           <span className="swSprite s_extLink"></span>
-                                        </a>
-                                        </span>
-                                    </li>
-                                    </ul>
+                                            <Photo />
                                 </div>
                             </div>
                             <div id="image-canvas-caption" className="a-row">

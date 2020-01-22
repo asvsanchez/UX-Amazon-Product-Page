@@ -1,7 +1,17 @@
 import React from 'react';
 
-const Wish: React.FC = () => {
-  return (
+interface IWish {
+  wish: String;
+}
+
+class Wish extends React.Component<IWish, {}> {
+  constructor(props: IWish) {
+      super(props);
+      // change state
+  }
+
+  public render() {
+      return (
     <div>
 
     <hr className="a-divider-normal"/>
@@ -14,7 +24,9 @@ const Wish: React.FC = () => {
                     <div id="contextualIngressPt">
                         <div id="contextualIngressPtPin"></div>
                         <span id="contextualIngressPtLabel" className="a-size-small">
-                            <div id="contextualIngressPtLabel_deliveryShortLine"><span>Enviar a Alejandro -&nbsp;</span><span>Los Pala... 41720&zwnj;</span></div>
+                            <div id="contextualIngressPtLabel_deliveryShortLine"><span>
+                              {this.props.wish}
+                              </span></div>
                         </span>
                     </div>
                 </div>
@@ -41,6 +53,7 @@ const Wish: React.FC = () => {
       </div>
     </div>
   );
+  }
 }
 
 export default Wish;

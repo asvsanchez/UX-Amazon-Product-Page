@@ -27,22 +27,10 @@ const Gift: React.FC = () => {
                                 <a href="javascript:void(0)" className="a-popover-trigger a-declarative">
                                     {/* eslint-disable-next-line */}
                                     <a className="a-link-normal gifting-option-popup-link" target="_blank" rel="noopener" href="https://www.amazon.es/gp/help/customer/display.html/?nodeId=GMPKVYDBR223TRPY&pop-up=1">
-                                        Porqué es esto importante?
+                                        ¿Porqué es esto importante?
                                 </a>
                                     <i className="a-icon a-icon-popover"></i></a>
                             </span>
-                            <div className="a-popover-preload" id="a-popover-preRegistrationPopoverContent">
-                                <p>
-                                    Vincula este dispositivo a tu cuenta Amazon para habilitar la configuración fácil por wifi.
-                            </p>
-                                <p>
-                                    Si en tu hogar ya dispones de un dispositivo Amazon válido conectado a tu red wifi, el nuevo dispositivo se conectará automáticamente a la red wifi de tu casa y completará la instalación.
-                            </p>
-                                {/* eslint-disable-next-line */}
-                                <a className="a-link-normal" target="_blank" rel="noopener" href="https://www.amazon.es/gp/help/customer/display.html/?nodeId=GMPKVYDBR223TRPY&pop-up=1">
-                                    Descubre más acerca de la configuración fácil por wifi
-                            </a>
-                            </div>
                         </span>
                     </span></label></div>
                 </span>

@@ -1,6 +1,7 @@
 import React from 'react';
 
 interface IPrice {
+  name_style: String;
   price: string;
 }
 
@@ -18,7 +19,7 @@ class Price extends React.Component<IPrice, {}> {
           <label className="a-form-label">
             Nombre de estilo:
         </label>
-          <span className="selection">Fire TV Stick</span>
+          <span className="selection">{this.props.name_style}</span>
         </div>
       </div>
       <div id="unifiedPrice_feature_div" className="feature" data-feature-name="unifiedPrice">
