@@ -1,0 +1,770 @@
+#landingImage {
+    max-width: 400px !important;
+    max-height: 400px !important;
+}
+
+#cm_cr_dpwidget .a-size-micro {
+    font-size: 9px;
+}
+
+#cm_cr_dpwidget .c7yTopDownDashedStrike {
+    border-top: 1px dashed #A9A9A9;
+    border-bottom: 1px dashed #A9A9A9;
+}
+
+#cm_cr_dpwidget .c7yBadgeAUI {
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    padding: 2px;
+    white-space: nowrap;
+}
+
+.nav-sprite-v1 .nav-sprite,
+.nav-sprite-v1 .nav-icon {
+    background-image: url(https://images-eu.ssl-images-amazon.com/images/G/30/gno/sprites/nav-sprite-global_bluebeacon-1x_optimized_layout1._CB468502164_.png);
+    background-position: 0 1000px;
+    background-repeat: repeat-x;
+}
+
+.nav-spinner {
+    background-image: url(https://images-eu.ssl-images-amazon.com/images/G/30/javascripts/lib/popover/images/snake._CB182726495_.gif);
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.nav-timeline-icon,
+.nav-access-image,
+.nav-timeline-prime-icon {
+    background-image: url(https://images-eu.ssl-images-amazon.com/images/G/30/gno/sprites/timeline_sprite_1x._CB439967801_.png);
+    background-repeat: no-repeat;
+}
+
+.ap_popover_unsprited .ap_body .ap_left {
+    background-image: url(https://images-na.ssl-images-amazon.com/images/G/01/javascripts/lib/popover/images/po_left_17._V1_.png)
+}
+
+.ap_popover_unsprited .ap_body .ap_right {
+    background-image: url(https://images-na.ssl-images-amazon.com/images/G/01/javascripts/lib/popover/images/po_right_17._V1_.png)
+}
+
+.ap_popover_unsprited .ap_header .ap_left {
+    background-image: url(https://images-na.ssl-images-amazon.com/images/G/01/javascripts/lib/popover/images/po_top_left._V1_.png)
+}
+
+.ap_popover_unsprited .ap_header .ap_right {
+    background-image: url(https://images-na.ssl-images-amazon.com/images/G/01/javascripts/lib/popover/images/po_top_right._V1_.png)
+}
+
+.ap_popover_unsprited .ap_header .ap_middle {
+    background-image: url(https://images-na.ssl-images-amazon.com/images/G/01/javascripts/lib/popover/images/po_top._V1_.png)
+}
+
+.ap_popover_unsprited .ap_footer .ap_left {
+    background-image: url(https://images-na.ssl-images-amazon.com/images/G/01/javascripts/lib/popover/images/po_bottom_left._V1_.png)
+}
+
+.ap_popover_unsprited .ap_footer .ap_right {
+    background-image: url(https://images-na.ssl-images-amazon.com/images/G/01/javascripts/lib/popover/images/po_bottom_right._V1_.png)
+}
+
+.ap_popover_unsprited .ap_footer .ap_middle {
+    background-image: url(https://images-na.ssl-images-amazon.com/images/G/01/javascripts/lib/popover/images/po_bottom._V1_.png)
+}
+
+.ap_popover_sprited .ap_body .ap_left,
+.ap_popover_sprited .ap_body .ap_right {
+    background-image: url(https://images-na.ssl-images-amazon.com/images/G/01/javascripts/lib/popover/images/light/sprite-v._V1_.png)
+}
+
+.ap_popover_sprited .ap_closebutton,
+.ap_popover_sprited .ap_footer .ap_left,
+.ap_popover_sprited .ap_footer .ap_middle,
+.ap_popover_sprited .ap_footer .ap_right,
+.ap_popover_sprited .ap_header .ap_left,
+.ap_popover_sprited .ap_header .ap_middle,
+.ap_popover_sprited .ap_header .ap_right {
+    background-image: url(https://images-na.ssl-images-amazon.com/images/G/01/javascripts/lib/popover/images/light/sprite-h._V1_.png)
+}
+
+.ap_popover_sprited .ap_body .ap_left-arrow,
+.ap_popover_sprited .ap_body .ap_right-arrow {
+    background-image: url(https://images-na.ssl-images-amazon.com/images/G/01/javascripts/lib/popover/images/light/sprite-arrow-v._V1_.png)
+}
+
+.ap_popover {
+    position: absolute;
+    outline: 0
+}
+
+.ap_body {
+    height: 100%;
+    min-height: 36px;
+    position: relative;
+    background-color: #fff;
+    margin: 0 17px
+}
+
+.ap_body .ap_left,
+.ap_popover_sprited .ap_body .ap_left-arrow {
+    width: 17px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: -17px;
+    background-attachment: scroll;
+    background-repeat: repeat-y
+}
+
+.ap_popover_sprited .ap_body .ap_left {
+    background-position: 0 top
+}
+
+.ap_body .ap_right,
+.ap_popover_sprited .ap_body .ap_right-arrow {
+    width: 17px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: -17px;
+    background-attachment: scroll;
+    background-repeat: repeat-y
+}
+
+.ap_popover_sprited .ap_body .ap_right {
+    background-position: -51px top
+}
+
+.ap_footer,
+.ap_header {
+    position: relative;
+    width: 100%
+}
+
+.ap_footer *,
+.ap_header * {
+    height: 26px
+}
+
+.ap_header .ap_left {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 34px;
+    background-attachment: scroll;
+    background-repeat: no-repeat
+}
+
+.ap_popover_sprited .ap_header .ap_left {
+    background-position: left -2px
+}
+
+.ap_header .ap_right {
+    width: 34px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-attachment: scroll;
+    background-repeat: no-repeat
+}
+
+.ap_popover_sprited .ap_header .ap_right {
+    background-position: right -2px
+}
+
+.ap_header .ap_middle {
+    margin: 0 34px;
+    background-attachment: scroll;
+    background-repeat: repeat-x
+}
+
+.ap_popover_sprited .ap_header .ap_middle {
+    background-position: 0 -70px
+}
+
+.ap_footer .ap_left {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 34px;
+    background-attachment: scroll;
+    background-repeat: no-repeat
+}
+
+.ap_popover_sprited .ap_footer .ap_left {
+    background-position: left -40px
+}
+
+.ap_footer .ap_right {
+    width: 34px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-attachment: scroll;
+    background-repeat: no-repeat
+}
+
+.ap_popover_sprited .ap_footer .ap_right {
+    background-position: right -40px
+}
+
+.ap_footer .ap_middle {
+    margin: 0 34px;
+    background-attachment: scroll;
+    background-repeat: repeat-x
+}
+
+.ap_popover_sprited .ap_footer .ap_middle {
+    background-position: 0 -108px
+}
+
+.ap_popover .ap_titlebar {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: #EAF3FE;
+    border-bottom: 1px solid #C2DDF2;
+    font-size: 14px;
+    font-weight: 700;
+    margin: 8px 18px;
+    white-space: nowrap;
+    overflow: hidden
+}
+
+.ap_popover .ap_titlebar.multiline {
+    white-space: normal;
+    overflow: visible
+}
+
+.ap_popover .ap_titlebar .ap_title {
+    padding: 4px 0;
+    margin-left: 10px;
+    overflow: hidden
+}
+
+#ap_overlay,
+#ap_overlay div {
+    background-color: #3F4C58;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99
+}
+
+.ap_popover .ap_close {
+    position: absolute;
+    right: 18px;
+    top: 13px
+}
+
+.ap_popover .ap_close a {
+    padding: 5px;
+    text-decoration: none;
+    outline: 0
+}
+
+.ap_popover .ap_close .ap_closetext {
+    display: none;
+    margin-right: 5px;
+    line-height: 1em
+}
+
+.ap_popover .ap_closebutton {
+    display: -moz-inline-box;
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background-repeat: no-repeat;
+    background-position: 0 -136px;
+    position: relative;
+    overflow: hidden;
+    vertical-align: top
+}
+
+.ap_popover .ap_closebutton span {
+    position: absolute;
+    top: -9999px
+}
+
+.ap_popover .ap_close img {
+    vertical-align: top
+}
+
+.ap_classic {
+    border-top: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+    border-bottom: 1px solid #2F2F1D;
+    border-right: 1px solid #2F2F1D;
+    background-color: #EFEDD4;
+    padding: 3px
+}
+
+.ap_classic .ap_titlebar {
+    color: #86875D;
+    font-size: 12px;
+    padding: 0 0 3px 0;
+    line-height: 1em
+}
+
+.ap_classic .ap_close {
+    float: right
+}
+
+.ap_classic .ap_content {
+    clear: both;
+    background-color: #fff;
+    border: 1px solid #ACA976;
+    padding: 8px;
+    font-size: 11px
+}
+
+#cm_cr_dpwidget .a-size-micro {
+    font-size: 9px;
+}
+
+#cm_cr_dpwidget .c7yTopDownDashedStrike {
+    border-top: 1px dashed #A9A9A9;
+    border-bottom: 1px dashed #A9A9A9;
+}
+
+#cm_cr_dpwidget .c7yBadgeAUI {
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    padding: 2px;
+    white-space: nowrap;
+}
+
+#buybox_feature_div .a-native-dropdown,
+#buybox .a-native-dropdown {
+    opacity: 1;
+    filter: alpha(opacity=100);
+    z-index: auto;
+    position: static;
+    display: inline;
+    font-weight: normal;
+}
+
+#buybox_feature_div label.a-native-dropdown,
+#buybox label.a-native-dropdown {
+    padding-right: 5px;
+}
+
+#buybox_feature_div .a-dropdown-container .a-button-dropdown,
+#buybox .a-dropdown-container .a-button-dropdown {
+    display: none !important;
+}
+
+#twister .a-native-dropdown {
+    display: inline;
+    opacity: 1;
+    filter: alpha(opacity=100);
+    z-index: auto;
+    position: static;
+}
+
+#twister .a-dropdown-container span.a-button-dropdown {
+    display: none !important
+}
+
+#buybox_feature_div #OneClickBox,
+#buybox #OneClickBox {
+    text-align: center;
+}
+
+#buybox_feature_div #oneClickAvailable,
+#buybox #oneClickAvailable {
+    text-align: center;
+}
+
+#defaultChildDropdown_feature_div .a-native-dropdown {
+    display: inline;
+}
+
+#defaultChildDropdown_feature_div .a-dropdown-container .a-button-dropdown {
+    display: none !important;
+}
+
+<style type="text/css">.nav-sprite-v1 .nav-sprite,
+.nav-sprite-v1 .nav-icon {
+    background-image: url(https://images-na.ssl-images-amazon.com/images/G/30/gno/sprites/nav-sprite-global_bluebeacon-1x_optimized_layout1._CB468502164_.png);
+    background-position: 0 1000px;
+    background-repeat: repeat-x;
+}
+
+.nav-spinner {
+    background-image: url(https://images-na.ssl-images-amazon.com/images/G/30/javascripts/lib/popover/images/snake._CB182726495_.gif);
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.nav-timeline-icon,
+.nav-access-image,
+.nav-timeline-prime-icon {
+    background-image: url(https://images-na.ssl-images-amazon.com/images/G/30/gno/sprites/timeline_sprite_1x._CB439967801_.png);
+    background-repeat: no-repeat;
+}
+
+.tagEdit {
+    padding-bottom: 4px;
+    padding-top: 4px;
+}
+
+.edit-tag {
+    width: 155px;
+    margin-left: 10px;
+}
+
+.list-tags {
+    white-space: nowrap;
+    padding: 1px 0px 0px 0px;
+}
+
+#suggest-table {
+    display: none;
+    position: absolute;
+    z-index: 2;
+    background-color: #fff;
+    border: 1px solid #9ac;
+}
+
+#suggest-table tr td {
+    color: #333;
+    font: 11px Verdana, sans-serif;
+    padding: 2px;
+}
+
+#suggest-table tr.hovered {
+    color: #efedd4;
+    background-color: #9ac;
+}
+
+.see-popular {
+    padding: 1.3em 0 0 0;
+}
+
+.tag-cols {
+    border-collapse: collapse;
+}
+
+.tag-cols td {
+    vertical-align: top;
+    width: 250px;
+    padding-right: 30px;
+}
+
+.tag-cols .tag-row {
+    padding: 0 0 7px 0px;
+}
+
+.tag-cols .see-all {
+    white-space: nowrap;
+    padding-top: 5px;
+}
+
+.tags-piles-feedback {
+    display: none;
+    color: #000;
+    font-size: 0.9em;
+    font-weight: bold;
+    margin: 0px 0 0 0;
+}
+
+.tag-cols i {
+    display: none;
+    cursor: pointer;
+    cursor: hand;
+    float: left;
+    font-style: normal;
+    font-size: 0px;
+    vertical-align: bottom;
+    width: 16px;
+    height: 16px;
+    margin-top: 1px;
+    margin-right: 3px;
+}
+
+.tag-cols .snake {
+    display: block;
+    background: url('https://images-na.ssl-images-amazon.com/images/G/30/x-locale/communities/tags/graysnake.jpg');
+}
+
+#tagContentHolder .tip {
+    display: none;
+    color: #999;
+    font-size: 10px;
+    padding-top: 0.25em;
+}
+
+#tagContentHolder .tip a {
+    color: #999 !important;
+    text-decoration: none !important;
+    border-bottom: solid 1px #CCC;
+}
+
+.nowrap {
+    white-space: nowrap;
+}
+
+#tgEnableVoting {
+    display: none;
+}
+
+#tagContentHolder .count {
+    color: #666;
+    font-size: 10px;
+    margin-left: 3px;
+    white-space: nowrap;
+}
+
+.count.tgVoting {
+    cursor: pointer;
+}
+
+.tgVoting .tgCounter {
+    margin-right: 3px;
+    border-bottom: 1px dashed #003399;
+    color: #003399;
+}
+
+.c2c-inline-sprite {
+    display: -moz-inline-box;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    overflow: hidden;
+    vertical-align: middle;
+    background-image: url(https://images-na.ssl-images-amazon.com/images/G/30/electronics/click2call/click2call-sprite._CB378012041_.png);
+    background-repeat: no-repeat;
+}
+
+.c2c-inline-sprite span {
+    position: absolute;
+    top: -9999px;
+}
+
+.dp-call-me-button {
+    width: 97px;
+    height: 22px;
+    background-position: 0px -57px;
+}
+
+.swSprite {
+    background-image: url(https://images-na.ssl-images-amazon.com/images/G/30/common/sprites/sprite-site-wide._CB146303602_.png);
+}
+
+.dpSprite {
+    background-image: url(https://images-na.ssl-images-amazon.com/images/G/30/common/sprites/sprite-dp-2._CB384098294_.png);
+}
+
+.wl-button-sprite {
+    background-image: url(https://images-na.ssl-images-amazon.com/images/G/30/x-locale/communities/wishlist/add-to-wl-button-sprite.gif);
+}
+
+.cBoxTL,
+.cBoxTR,
+.cBoxBL,
+.cBoxBR {
+    background-image: url(https://images-na.ssl-images-amazon.com/images/G/30/common/sprites/sprite-site-wide-2.png);
+}
+
+.auiTestSprite {
+    background: url(https://images-na.ssl-images-amazon.com/images/G/30/nav2/images/sprite-carousel-btns-stars2.png) no-repeat scroll 0 0 transparent;
+}
+
+span.amtchelp {
+    background: url(https://images-na.ssl-images-amazon.com/images/G/30/SellerForums/amz/images/help-16x16._CB339876234_.gif) no-repeat scroll right bottom transparent;
+}
+
+.shuttleGradient {
+    background: url(https://images-na.ssl-images-amazon.com/images/G/30/x-locale/communities/customerimage/shuttle-gradient._CB182726566_.gif);
+}
+
+.twisterPopoverArrow {
+    background: url(https://images-na.ssl-images-amazon.com/images/G/30/gateway/csw/tri-down._CB401960263_.png);
+}
+
+#finderUpdateButton img,
+#finderShowMoreDevicesLink,
+#finderHideMoreDevicesLink {
+    background-image: url(https://images-na.ssl-images-amazon.com/images/G/30/nav2/finders/finder-fits-sprites.gif);
+}
+
+.cmtySprite {
+    background-image: url(https://images-na.ssl-images-amazon.com/images/G/30/common/sprites/sprite-communities._CB390861151_.png);
+    background-repeat: no-repeat;
+}
+
+.medSprite {
+    background-image: url('https://images-na.ssl-images-amazon.com/images/G/30/common/sprites/sprite-media-platform._CB168621669_.png');
+    background-repeat: no-repeat;
+}
+
+#navbar.nav-search-swap #nav-xshop-container {
+    margin-left: 3px;
+}
+
+div#navSwmHoliday.nav-focus {
+    border: none;
+    margin: 0;
+}
+
+#nav-subnav {
+    display: none! important;
+}
+
+#leftCol {
+    width: 34.0%;
+}
+
+.centerColAlign {
+    margin-left: 35.5%;
+}
+
+html[dir="rtl"] .centerColAlign {
+    margin-right: 35.5%;
+}
+
+#tell-a-friend .swf-social-site {
+    outline: none;
+}
+
+.bundleBuilderSubmit {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.bundleBuilderTitle {
+    font-size: 15px !important;
+}
+
+.olp-touch-link {
+    position: relative;
+    text-decoration: inherit !important;
+    color: inherit !important;
+}
+
+.arrow-icon {
+    position: absolute;
+    top: 36%;
+    right: 2%;
+}
+
+.olp-text {
+    float: left;
+}
+
+.olp-link-widget {
+    padding: 10px 0px;
+}
+
+.a-icon-touch-link {
+    display: none;
+}
+
+.olp-text-box {
+    text-decoration: none;
+    padding-right: 10px;
+}
+
+html[dir=rtl] .arrow-icon {
+    left: 2%;
+    right: unset;
+}
+
+html[dir=rtl] .olp-text {
+    float: right !important;
+}
+
+html[dir=rtl] .olp-text-box {
+    padding-left: 10px;
+    padding-right: 0px;
+}
+
+#altIngressSpan {
+    width: 40px;
+    height: 40px;
+}
+
+.noUnderline a:hover {
+    text-decoration: none;
+}
+
+.abb-product-view #averageCustomerReviews {
+    display: none;
+}
+
+#nav-prime-tooltip {
+    padding: 0 20px 2px 20px;
+    background-color: white;
+    font-family: arial, sans-serif;
+}
+
+.nav-npt-text-title {
+    font-family: arial, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 21px;
+    color: #E47923;
+}
+
+.nav-npt-text-detail,
+a.nav-npt-a {
+    font-family: arial, sans-serif;
+    font-size: 12px;
+    line-height: 14px;
+    color: #333333;
+    margin: 2px 0px;
+}
+
+a.nav-npt-a {
+    text-decoration: underline;
+}
+
+#cm_cr_dpwidget .a-size-micro {
+    font-size: 9px;
+}
+
+#cm_cr_dpwidget .c7yTopDownDashedStrike {
+    border-top: 1px dashed #A9A9A9;
+    border-bottom: 1px dashed #A9A9A9;
+}
+
+#cm_cr_dpwidget .c7yBadgeAUI {
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    padding: 2px;
+    white-space: nowrap;
+}
+
+#nav-prime-tooltip {
+    padding: 0 20px 2px 20px;
+    background-color: white;
+    font-family: arial, sans-serif;
+}
+
+.nav-npt-text-title {
+    font-family: arial, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 21px;
+    color: #E47923;
+}
+
+.nav-npt-text-detail,
+a.nav-npt-a {
+    font-family: arial, sans-serif;
+    font-size: 12px;
+    line-height: 14px;
+    color: #333333;
+    margin: 2px 0px;
+}
+
+a.nav-npt-a {
+    text-decoration: underline;
+}
+
+.abb-product-view #averageCustomerReviews {
+    display: none;
+}
