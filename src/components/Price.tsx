@@ -1,6 +1,16 @@
 import React from 'react';
 
-const Price: React.FC = () => {
+interface IPrice {
+  price: string;
+}
+
+class Price extends React.Component<IPrice, {}> {
+  constructor(props: IPrice) {
+      super(props);
+      // change state
+  }
+
+  public render() {
   return (
     <div>
       <div id="variation_style_name" className="a-section a-spacing-small">
@@ -17,7 +27,7 @@ const Price: React.FC = () => {
             <tr id="priceblock_ourprice_row">
               <td id="priceblock_ourprice_lbl" className="a-color-secondary a-size-base a-text-right a-nowrap">Precio:</td>
               <td className="a-span12">
-                <span id="priceblock_ourprice" className="a-size-medium a-color-price priceBlockBuyingPriceString">39,99 €</span>
+                <span id="priceblock_ourprice" className="a-size-medium a-color-price priceBlockBuyingPriceString">{this.props.price}</span>
                 <span id="ourprice_shippingmessage">
                   <span id="priceBadging_feature_div" className="feature" data-feature-name="priceBadging">
                     <i className="a-icon-wrapper a-icon-prime-with-text a-color-secondary aok-nowrap"><i className="a-icon a-icon-prime" role="img" aria-label="GRATIS Envío 1 día"></i><span className="a-icon-text"> GRATIS Envío 1 día</span></i>
@@ -41,6 +51,7 @@ const Price: React.FC = () => {
         </div>
       </div></div>
   );
+  }
 }
 
 export default Price;

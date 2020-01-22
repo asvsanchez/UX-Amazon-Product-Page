@@ -4555,6 +4555,119 @@ P.when('A').register("ImageBlockATF", function(A) {
     return data;
 });
 
+(window.AmazonUIPageJS ? AmazonUIPageJS : P).load.js('https://images-na.ssl-images-amazon.com/images/I/311%2BNUiljjL._RC|51QMAqir34L.js_.js?AUIClients/AskAuiAssets#155248-T1');
+(window.AmazonUIPageJS ? AmazonUIPageJS : P).load.js('https://images-na.ssl-images-amazon.com/images/I/11omjJhwsqL.js?AUIClients/DetailPageLazyLoadLibAssets');
+(window.AmazonUIPageJS ? AmazonUIPageJS : P).load.js('https://images-eu.ssl-images-amazon.com/images/I/31K5PJjjggL._RC|11tXe99yWBL.js,01-4MbsHMWL.js,11gFiYe7KbL.js,217PnHIylxL.js_.js?AUIClients/DesktopMedleyFilteringMetaAsset');
+(window.AmazonUIPageJS ? AmazonUIPageJS : P).load.js('https://images-na.ssl-images-amazon.com/images/I/317cKjadXIL.js?AUIClients/MarsContentGridAssets');
+
+(function() {
+    var performance = window.performance;
+    var isApiSupported = performance && performance.mark && performance.measure && performance.getEntriesByName;
+    if (isApiSupported) {
+        performance.mark('content-grid-widget:1.0' + ':bb');
+    } else if (window.ue) {
+        window.ue.count('mars:missing-performance-api', 1);
+    }
+})();
+
+if (window.performance && window.performance.mark) {
+    window.performance.mark('mars-content-grid-row' + ':bb');
+}
+
+P.when("A", "ready").execute(function(A) {
+    var $ = A.$;
+    var $image = $('img[src="https://m.media-amazon.com/images/G/30/kindle/dp/2019/53663101/stream_on-pack._QL20_CB438265839_.jpg"][data-a-hires="https://m.media-amazon.com/images/G/30/kindle/dp/2019/53663101/stream_on-pack._CB438265839_.jpg"]');
+    A.loadHiResImage($image);
+});
+
+if (window.performance && window.performance.mark) {
+    window.performance.mark('mars-content-grid-row' + ':be');
+}
+(function() {
+    var performance = window.performance;
+    if (!performance || !performance.mark || !performance.measure || !performance.getEntriesByName) {
+        return;
+    }
+
+    function measureMetricForKey(key, metric) {
+        var entry = key + ':' + metric;
+        performance.measure(entry, key + ':bb', key + ':be');
+        var entries = performance.getEntriesByName(entry);
+        if (entries.length === 0) {
+            return;
+        }
+        entries = entries.splice(entries.length - 1, 1);
+        var duration = entries[0].duration;
+        if (window.ue) {
+            window.ue.count(entry, duration);
+        }
+    }
+    [
+        'mars-content-grid-row'
+    ].forEach(function(counterKey) {
+        measureMetricForKey(counterKey, 'clientBodyBeginToEnd');
+    });
+})();
+
+if (window.performance && window.performance.mark) {
+    window.performance.mark('mars-content-grid-row' + ':bb');
+}
+
+if (window.performance && window.performance.mark) {
+    window.performance.mark('mars-content-grid-row' + ':be');
+}
+(function() {
+    var performance = window.performance;
+    if (!performance || !performance.mark || !performance.measure || !performance.getEntriesByName) {
+        return;
+    }
+
+    function measureMetricForKey(key, metric) {
+        var entry = key + ':' + metric;
+        performance.measure(entry, key + ':bb', key + ':be');
+        var entries = performance.getEntriesByName(entry);
+        if (entries.length === 0) {
+            return;
+        }
+        entries = entries.splice(entries.length - 1, 1);
+        var duration = entries[0].duration;
+        if (window.ue) {
+            window.ue.count(entry, duration);
+        }
+    }
+    [
+        'mars-content-grid-row'
+    ].forEach(function(counterKey) {
+        measureMetricForKey(counterKey, 'clientBodyBeginToEnd');
+    });
+})();
+
+if (window.performance && window.performance.mark) {
+    window.performance.mark('mars-content-grid-row' + ':bb');
+}
+
+P.when("A", "ready").execute(function(A) {
+    var $ = A.$;
+    var $image = $('img[src="https://m.media-amazon.com/images/G/30/kindle/dp/2019/53663101/take_your_tv-pack._QL20_CB438265839_.jpg"][data-a-hires="https://m.media-amazon.com/images/G/30/kindle/dp/2019/53663101/take_your_tv-pack._CB438265839_.jpg"]');
+    A.loadHiResImage($image);
+});
+
+(window.AmazonUIPageJS ? AmazonUIPageJS : P).load.js('https://images-na.ssl-images-amazon.com/images/I/21KU8J2HwrL.js?AUIClients/MarsDeviceUpgraderAssets');
+
+(function() {
+    var performance = window.performance;
+    var isApiSupported = performance && performance.mark && performance.measure && performance.getEntriesByName;
+    if (isApiSupported) {
+        performance.mark('mars-device-upgrader-widget:1.0' + ':bb');
+    } else if (window.ue) {
+        window.ue.count('mars:missing-performance-api', 1);
+    }
+})();
+
+window.uet && uet('bb', 'MakoTechSpecs', {
+    wb: 1
+});
+
 (function(f) {
     var _np = (window.P._namespace("DetailPageImageBlockTemplate"));
     if (_np.guardFatal) {
@@ -11526,4 +11639,11 @@ data - a - state = "{&quot;key&quot;:&quot;turbo-checkout-page-state&quot;}" > {
                 if (typeof window.markFeatureRender === 'function') {
                     window.markFeatureRender('twister', options);
                 }
+            });
+
+            window.uet && uet('be', 'MakoTechSpecs', {
+                wb: 1
+            });
+            window.uex && uex('ld', 'MakoTechSpecs', {
+                wb: 1
             });

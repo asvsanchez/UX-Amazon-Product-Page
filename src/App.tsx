@@ -4,17 +4,27 @@ import Title from './components/Title';
 import Review from './components/Review';
 import Description from './components/Description';
 import Cart from './components/Cart';
-import Price from './components/Price';
 import Gift from './components/Gift';
 import Options from './components/Options';
 import Social from './components/Social';
 import Shipping from './components/Shipping';
 import Wish from './components/Wish';
+import Price from './containers/Price';
+
+import IGlobalState, { initialState } from './state/globalState';
+import { Action, createStore } from 'redux';
+import { Provider } from 'react-redux';
+
+const reducer = (state: IGlobalState = initialState, action: Action) => {
+        return state;
+  }
+const store = createStore(reducer, initialState);
 
 class App extends React.Component {
     
     public render() {
         return(
+            <Provider store={store}>
             <div id="ppd">
             <div id="rightCol" className="rightCol  ">
                 <div id="atfRight1_feature_div" className="feature" data-feature-name="atfRight1">
@@ -227,6 +237,7 @@ class App extends React.Component {
                                                             </div>
                                                         </div>
                                                     </div>
+                                                    {/* eslint-disable-next-line */}
                                                     <a className="a-link-normal abb-open-interstitial aok-hidden" href="#"></a>
                                                 </div>
                                             </div>
@@ -426,6 +437,7 @@ class App extends React.Component {
                                     </li>
                                     <li id="noFlashContent" className="noFlash a-hidden">
                                         <span className="a-list-item">
+                                        {/* eslint-disable-next-line */}
                                         <a className="a-link-normal" target="_blank" rel="noopener"
                                            href="https://get.adobe.com/flashplayer">
                                            <span className="swSprite s_extLink"></span>
@@ -453,16 +465,19 @@ class App extends React.Component {
                 <div id="iv-tab-view-container">
                     <ul className="iv-tab-views a-declarative">
                         <li id="ivVideosTabHeading" className="iv-tab-heading">
+                            {/* eslint-disable-next-line */}
                             <a href="#" data-iv-tab-view="ivVideosTab">
                             VÍDEOS
                          </a>
                         </li>
                         <li id="iv360TabHeading" className="iv-tab-heading">
+                            {/* eslint-disable-next-line */}
                             <a href="#" data-iv-tab-view="iv360Tab">
                             VISTA EN 360º
                          </a>
                         </li>
                         <li id="ivImagesTabHeading" className="iv-tab-heading">
+                            {/* eslint-disable-next-line */}
                             <a href="#" data-iv-tab-view="ivImagesTab">
                             IMÁGENES
                          </a>
@@ -668,6 +683,7 @@ class App extends React.Component {
     </div>
     <div id="hqpWrapper" className="centerColAlign  "></div>
 </div>
+</Provider>
         );
     }
 }
