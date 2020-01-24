@@ -1,12 +1,36 @@
 import React from "react";
+import zoomin from '../img/zoomin.png';
+import zoomout from '../img/zoomout.png';
 
 const Social: React.FC = () => {
+
+  var fontSize = 1;
+
+  function zoomIn() {
+    fontSize += 0.1;
+    document.getElementById("ppd").style.fontSize = fontSize + "em";
+  }
+
+  function zoomOut() {
+      fontSize -= 0.1;
+      document.getElementById("ppd").style.fontSize = fontSize + "em";
+  }
+
   return (
     <div
       id="tellAFriendBox_feature_div"
       className="feature"
       data-feature-name="tellAFriendBox"
     >
+      {/*
+      Thanks to flaticon.com for the icons: 
+      https://www.flaticon.com/free-icon/zoom_2489734?term=zoom&page=1&position=4
+      https://www.flaticon.com/free-icon/zoom_2489736?term=zoom&page=1&position=5
+      */}
+      <img onClick={zoomIn} src={zoomin} alt="zoomin" id="zoomin"/> 
+      <img onClick={zoomOut} src={zoomout} alt="zoomout" id="zoomout"/>
+      <br/>
+
       <div
         id="tell-a-friend"
         data-close="Cerrar"

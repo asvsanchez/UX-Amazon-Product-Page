@@ -15,6 +15,7 @@ class Shipping extends React.Component<IShipping, {}> {
   public render() {
     return (
       <div>
+        <hr />
         <div id="ddmDeliveryMessage" className="a-section a-spacing-mini">
           Entrega GRATIS <b>Mañana</b>
           <br />

@@ -21,6 +21,7 @@ class Price extends React.Component<IPrice, {}> {
             <span className="selection">{this.props.name_style}</span>
           </div>
         </div>
+        <hr />
         <div
           id="unifiedPrice_feature_div"
           className="feature"
@@ -33,7 +34,7 @@ class Price extends React.Component<IPrice, {}> {
                   id="priceblock_ourprice_lbl"
                   className="a-color-secondary a-size-base a-text-right a-nowrap"
                 >
-                  Precio:
+                  <b>Precio:</b>
                 </td>
                 <td className="a-span12">
                   <span
@@ -54,7 +55,7 @@ class Price extends React.Component<IPrice, {}> {
                           role="img"
                           aria-label="GRATIS Envío 1 día"
                         ></i>
-                        <span className="a-icon-text"> GRATIS Envío 1 día</span>
+                        <span className="a-icon-text" id="log_one"> GRATIS Envío 1 día</span>
                       </i>
                     </span>
                   </span>
@@ -68,7 +69,7 @@ class Price extends React.Component<IPrice, {}> {
               <tr id="vatMessage">
                 <td></td>
                 <td>
-                  <span className="a-size-base">Precio final del producto</span>
+                  <span className="a-size-base" id="final-price">Precio <b>final</b> del producto</span>
                 </td>
               </tr>
             </table>

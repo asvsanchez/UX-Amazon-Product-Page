@@ -26,7 +26,7 @@ class Images extends React.Component<IImages, {}> {
                   <span className="a-button-inner">
                     <input className="a-button-input" type="submit" />
                     <span className="a-button-text" aria-hidden="true" />
-                    <img alt="" src={this.props.images_link[0]} />
+                    <img className="images" alt="" src={this.props.images_link[0]} />
                   </span>
                 </span>
               </span>
@@ -43,7 +43,7 @@ class Images extends React.Component<IImages, {}> {
                   <span className="a-button-inner">
                     <input className="a-button-input" type="submit" />
                     <span className="a-button-text" aria-hidden="true">
-                      <img alt="" src={this.props.images_link[1]} />
+                      <img className="images" alt="" src={this.props.images_link[1]} />
                     </span>
                   </span>
                 </span>
@@ -61,7 +61,7 @@ class Images extends React.Component<IImages, {}> {
                   <span className="a-button-inner">
                     <input className="a-button-input" type="submit" />
                     <span className="a-button-text" aria-hidden="true">
-                      <img alt="" src={this.props.images_link[2]} />
+                      <img className="images" alt="" src={this.props.images_link[2]} />
                     </span>
                   </span>
                 </span>
@@ -79,7 +79,7 @@ class Images extends React.Component<IImages, {}> {
                   <span className="a-button-inner">
                     <input className="a-button-input" type="submit" />
                     <span className="a-button-text" aria-hidden="true">
-                      <img alt="" src={this.props.images_link[3]} />
+                      <img className="images" alt="" src={this.props.images_link[3]} />
                     </span>
                   </span>
                 </span>
@@ -105,7 +105,7 @@ class Images extends React.Component<IImages, {}> {
                   <span className="a-button-inner">
                     <input className="a-button-input" type="submit" />
                     <span className="a-button-text" aria-hidden="true">
-                      <img alt="" src={this.props.images_link[4]} />
+                      <img className="images" alt="" src={this.props.images_link[4]} />
                     </span>
                   </span>
                 </span>

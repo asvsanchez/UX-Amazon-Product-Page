@@ -1,8 +1,20 @@
 import React from "react";
 
 const Gift: React.FC = () => {
+
+  function showMore() {
+    document.getElementById("items-gift").style.display="block";   
+    document.getElementById("show-gift").style.display="none"; 
+  }
+
   return (
-    <div>
+    <>
+    {/* eslint-disable-next-line */}
+    <a href="#" onClick={showMore} id="show-gift">
+    <div className="a-divider a-divider-break abb-divider">
+      <h5>Añadir opciones de regalo</h5>
+    </div></a>
+    <div id="items-gift">
       <div
         id="gifting-option-container"
         className="a-section a-spacing-mini inline-popup-link"
@@ -83,6 +95,7 @@ const Gift: React.FC = () => {
         </span>
       </div>
     </div>
+    </>
   );
 };
 

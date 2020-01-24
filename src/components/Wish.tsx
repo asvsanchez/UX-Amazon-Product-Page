@@ -12,10 +12,21 @@ class Wish extends React.Component<IWish, {}> {
   }
 
   public render() {
-    return (
-      <div>
-        <hr className="a-divider-normal" />
 
+    function showMore() {
+      document.getElementById("items-wish").style.display="block";   
+      document.getElementById("show-wish").style.display="none"; 
+    }
+
+    return (
+      <>
+      {/* eslint-disable-next-line */}
+      <a href="#" onClick={showMore} id="show-wish">
+      <div className="a-divider a-divider-break abb-divider">
+        <h5>Añadir opciones de producto</h5>
+      </div></a>
+      <div id="items-wish">
+        <hr/>
         <span
           className="a-declarative"
           data-action="dpContextualIngressPt"
@@ -114,6 +125,7 @@ class Wish extends React.Component<IWish, {}> {
           </span>
         </div>
       </div>
+      </>
     );
   }
 }

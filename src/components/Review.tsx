@@ -128,8 +128,6 @@ class Review extends React.Component<IReview, {}> {
             </span>
           </div>
         </div>
-
-        <hr />
       </div>
     );
   }

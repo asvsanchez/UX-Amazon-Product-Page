@@ -12,11 +12,22 @@ class Options extends React.Component<IOptions, {}> {
   }
 
   public render() {
+
+    function showMore() {
+      document.getElementById("items-option").style.display="block";   
+      document.getElementById("show-options").style.display="none"; 
+    }
+
     return (
-      <div>
+      <>
+      {/* eslint-disable-next-line */}
+      <a href="#" onClick={showMore} id="show-options">
         <div className="a-divider a-divider-break abb-divider">
           <h5>Añadir más productos</h5>
-        </div>
+      </div></a>
+
+      <div id="items-option">
+        <div className="a-divider a-divider-break abb-divider"/>
         <ul className="a-unordered-list a-nostyle a-vertical a-spacing-none">
           <li
             id="abb-option-B01LXP5TXI"
@@ -116,6 +127,7 @@ class Options extends React.Component<IOptions, {}> {
           </li>
         </ul>
       </div>
+      </>
     );
   }
 }

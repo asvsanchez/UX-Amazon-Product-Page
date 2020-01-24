@@ -68,6 +68,7 @@ const Cart: React.FC = () => {
               id="submit.add-to-cart-announce"
               className="a-button-text"
               aria-hidden="true"
+              style={{fontSize:"1.5em"}}
             >
               Añadir a la cesta
             </span>
@@ -98,6 +99,7 @@ const Cart: React.FC = () => {
               id="submit.buy-now-announce"
               className="a-button-text"
               aria-hidden="true"
+              style={{fontSize:"1.5em"}}
             >
               Comprar ya
             </span>

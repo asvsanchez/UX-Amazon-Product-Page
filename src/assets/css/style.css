@@ -1,0 +1,79 @@
+#landingImage {
+    width: 100%! important;
+}
+
+#zoomin {
+    width: 40px;
+    float: left;
+    cursor: pointer;
+}
+
+#zoomout {
+    width: 40px;
+    float: left;
+    cursor: pointer;
+}
+
+.a-form-label {
+    float: left;
+    margin-right: 3px;
+}
+
+#priceblock_ourprice_lbl,
+#final-price,
+#log_one {
+    font-size: 1.2em !important;
+}
+
+.priceBlockBuyingPriceString {
+    font-size: 2.5em !important;
+    margin-right: 20px !important;
+}
+
+#productTitle {
+    font-size: 1.5em !important;
+}
+
+.images {
+    width: 50px;
+}
+
+#items-description,
+#items-option,
+#items-wish,
+#items-gift {
+    display: none;
+}
+
+#feature-bullets {
+    text-align: justify;
+}
+
+.a-link-normal.abb-list-title-no-variation {
+    margin-right: 10px;
+}
+
+#selectQuantity {
+    margin: auto;
+    width: 90%;
+    font-size: 1.3em;
+}
+
+.a-row.a-spacing-base {
+    margin: auto;
+    width: 60%;
+}
+
+#merchant-info,
+#availability {
+    font-weight: bold;
+}
+
+#availability_feature_div {
+    text-align: center;
+}
+
+.a-lineitem {
+    margin: auto;
+    width: 35%;
+}

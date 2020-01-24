@@ -20,13 +20,12 @@ class Title extends React.Component<ITitle, {}> {
           data-feature-name="bylineInfo"
         >
           <div className="a-section a-spacing-none">
-            de
             <a
               id="bylineInfo"
               className="a-link-normal"
-              href="/Amazon/b/ref=bl_dp_s_web_20312177031?ie=UTF8&amp;node=20312177031&amp;field-lbr_brands_browse-bin=Amazon"
+              href="/"
             >
-              Amazon
+              de Amazon
             </a>
           </div>
         </div>
