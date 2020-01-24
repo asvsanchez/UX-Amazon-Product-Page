@@ -1,6 +1,6 @@
 # Better UX for Amazon Product Page
 
-By Alejandro Sánchez Villarín - Project for the subject Guided Design by User Experience - Master in Computer Engineering - University of Seville
+Alejandro Sánchez Villarín - Guided Design by User Experience - Master in Computer Engineering - University of Seville
 
 ### Available scripts in the project
 
@@ -26,3 +26,5 @@ Runs the app in the `production` mode. Open [http://localhost:5000](http://local
 2. The project is extracted and the first time the command `npm install` and `npm run build` is executed.
 3. To start the project in `development` mode, execute the command `npm start`.
 4. To start the project in `production` mode, execute the command `serve -s build`.
+
+#### Note: if the images are not loaded, the page must be reloaded.
