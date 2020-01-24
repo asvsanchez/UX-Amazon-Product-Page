@@ -4,29 +4,30 @@ interface IOptions {
   option_element: String[];
 }
 
-class Options extends React.Component<IOptions, {}> {
+interface IElements {
+  showed: boolean;
+}
+
+class Options extends React.Component<IOptions, IElements> {
+
   /* eslint-disable-next-line */
   constructor(props: IOptions) {
     super(props);
-    // change state
+    this.state = {showed: false}
+  }
+
+  public toggleShowed = () => {
+    this.setState({showed: !!!this.state.showed});
   }
 
   public render() {
 
-    function showMore() {
-      document.getElementById("items-option").style.display="block";   
-      document.getElementById("show-options").style.display="none"; 
-    }
-
     return (
       <>
-      {/* eslint-disable-next-line */}
-      <a href="#" onClick={showMore} id="show-options">
-        <div className="a-divider a-divider-break abb-divider">
-          <h5>Añadir más productos</h5>
-      </div></a>
 
-      <div id="items-option">
+      {this.state.showed ?
+
+      <div>
         <div className="a-divider a-divider-break abb-divider"/>
         <ul className="a-unordered-list a-nostyle a-vertical a-spacing-none">
           <li
@@ -127,6 +128,9 @@ class Options extends React.Component<IOptions, {}> {
           </li>
         </ul>
       </div>
+      : <div onClick={this.toggleShowed} className="a-divider a-divider-break abb-divider" id="show-options">
+      <h5>Añadir más productos</h5>
+      </div> }
       </>
     );
   }

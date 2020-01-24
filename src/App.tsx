@@ -1,5 +1,5 @@
 import React from 'react';
-import './assets/css/style.css';
+import './assets/css/main.css';
 import Images from './containers/Images';
 import Title from './containers/Title';
 import Review from './containers/Review';

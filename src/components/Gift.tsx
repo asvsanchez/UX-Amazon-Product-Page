@@ -1,20 +1,31 @@
 import React from "react";
 
-const Gift: React.FC = () => {
+interface IGift {}
 
-  function showMore() {
-    document.getElementById("items-gift").style.display="block";   
-    document.getElementById("show-gift").style.display="none"; 
+interface IElements {
+  showed: boolean;
+}
+
+class Gift extends React.Component<IGift, IElements> {
+
+  /* eslint-disable-next-line */
+  constructor(props: IGift) {
+    super(props);
+    this.state = {showed: false}
   }
+  
+  public toggleShowed = () => {
+    this.setState({showed: !!!this.state.showed});
+  }
+  
+  public render() {
 
   return (
     <>
-    {/* eslint-disable-next-line */}
-    <a href="#" onClick={showMore} id="show-gift">
-    <div className="a-divider a-divider-break abb-divider">
-      <h5>Añadir opciones de regalo</h5>
-    </div></a>
-    <div id="items-gift">
+
+    {this.state.showed ?
+
+    <div>
       <div
         id="gifting-option-container"
         className="a-section a-spacing-mini inline-popup-link"
@@ -95,8 +106,12 @@ const Gift: React.FC = () => {
         </span>
       </div>
     </div>
+    : <div onClick={this.toggleShowed} className="a-divider a-divider-break abb-divider" id="show-gift">
+    <h5>Añadir opciones de regalo</h5>
+    </div> }
     </>
   );
-};
+  }
+}
 
 export default Gift;

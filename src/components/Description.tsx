@@ -36,16 +36,16 @@ class Description extends React.Component<IDescription, {}> {
           id="feature-bullets"
           className="a-section a-spacing-medium a-spacing-top-small"
         >
-          <p className="a-list-item"><b>{this.props.description_element[0]}</b></p>
+          <p className="a-list-item"><b>{this.props.description_element[0]}</b>
           {/* eslint-disable-next-line */}
-          <a href="#" onClick={showMore} id="show-more">[mostrar más]</a>
+          <a onClick={showMore} id="show-more">Mostrar más</a></p>
           <div id="items-description">
           {elements.map((element) =>
             <p className="a-list-item">{this.props.description_element[element]}</p>
           )}
-          <p className="a-list-item">{this.props.description_element[6]}</p>
+          <p className="a-list-item">{this.props.description_element[6]}
           {/* eslint-disable-next-line */}
-          <a href="#" onClick={showLess} id="show-less">[mostrar menos]</a>
+          <a onClick={showLess} id="show-less">Mostrar menos</a></p>
         </div>
         
         </div>

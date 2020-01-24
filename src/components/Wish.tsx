@@ -4,28 +4,28 @@ interface IWish {
   wish: String;
 }
 
-class Wish extends React.Component<IWish, {}> {
+interface IElements {
+  showed: boolean;
+}
+
+class Wish extends React.Component<IWish, IElements> {
+  
   /* eslint-disable-next-line */
   constructor(props: IWish) {
     super(props);
-    // change state
+    this.state = {showed: false}
+  }
+
+  public toggleShowed = () => {
+    this.setState({showed: !!!this.state.showed});
   }
 
   public render() {
 
-    function showMore() {
-      document.getElementById("items-wish").style.display="block";   
-      document.getElementById("show-wish").style.display="none"; 
-    }
-
     return (
       <>
-      {/* eslint-disable-next-line */}
-      <a href="#" onClick={showMore} id="show-wish">
-      <div className="a-divider a-divider-break abb-divider">
-        <h5>Añadir opciones de producto</h5>
-      </div></a>
-      <div id="items-wish">
+      {this.state.showed ?
+      <div>
         <hr/>
         <span
           className="a-declarative"
@@ -124,7 +124,9 @@ class Wish extends React.Component<IWish, {}> {
             </span>
           </span>
         </div>
-      </div>
+      </div> : <div onClick={this.toggleShowed} className="a-divider a-divider-break abb-divider" id="show-wish">
+        <h5>Añadir opciones de producto</h5>
+      </div>}
       </>
     );
   }

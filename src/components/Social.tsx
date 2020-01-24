@@ -1,6 +1,6 @@
 import React from "react";
-import zoomin from '../img/zoomin.png';
-import zoomout from '../img/zoomout.png';
+import zoomin from '../images/zoomin.png';
+import zoomout from '../images/zoomout.png';
 
 const Social: React.FC = () => {
 

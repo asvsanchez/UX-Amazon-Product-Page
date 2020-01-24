@@ -38,11 +38,14 @@
     width: 50px;
 }
 
-#items-description,
-#items-option,
-#items-wish,
-#items-gift {
+#items-description {
     display: none;
+}
+
+#show-options,
+#show-wish,
+#show-gift {
+    cursor: pointer;
 }
 
 #feature-bullets {
@@ -76,4 +79,10 @@
 .a-lineitem {
     margin: auto;
     width: 35%;
+}
+
+#show-more,
+#show-less {
+    font-size: 1.2em;
+    margin-left: 5px;
 }
